@@ -1,0 +1,205 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("backrnd-light.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: black;
+}
+
+
+body.dark-mode .navbar,
+body.dark-mode footer {
+    background: black;
+}
+
+body.dark-mode #main-content,
+body.dark-mode .section,
+body.dark-mode #contact {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: white;
+}
+
+body.dark-mode a {
+    color: lightblue;
+}
+
+
+#main-content,
+.left-column,
+.right-column,
+.about-text,
+#contact,
+footer,
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.navbar {
+    background: black;
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+
+#main-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 1;
+}
+
+
+#profileImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 80%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+.name-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.job-title {
+    color: black;
+}
+
+#contact p,
+#contact a {
+    font-size: 16px;
+    color: black;
+}
+
+#contact a:hover {
+    color: darkblue;
+}
+
+.about-text {
+    line-height: 1.6;
+    margin-top: 10px;
+    color: black;
+}
+
+
+#skillsSection {
+    display: block; 
+}
+
+
+.message-form input[type="text"] {
+    width: 20%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.message-form input[type="submit"] {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message-form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+
+button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #666;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+body.dark-mode .about-text,
+body.dark-mode #about,
+body.dark-mode #about p,
+body.dark-mode #about li {
+    color: white;
+}
+
+
+body.dark-mode #contact,
+body.dark-mode #contact p,
+body.dark-mode #contact a {
+    color: white;
+}
+
+
+body.dark-mode #contact a:hover {
+    color: lightblue;
+}
+
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: white;
+}
+
+body.dark-mode {
+    background-image: url("backrnd-dark.png");
+    color: white;
+}
+body {
+    transition: background-image 0.6s ease-in-out;
+}

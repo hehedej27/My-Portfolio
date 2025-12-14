@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balaguer 2</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#message-form">Message Me</a>
+    </h2>
+</header>
+
+<button id="themeBtn">Toggle Dark Mode</button>
+
+<hr>
+
+<section id="main-content">
+
+<div id="home">
+    <img id="profileImg" src="pfp1.jpg" alt="Profile Image" width="250"><br><br>
+
+    <button id="imgBtn">Change Image</button>
+
+    <h2>꧁ঔৣ☬✞Balaguer Bryan Paulo G.✞☬ঔৣ꧂</h2>
+
+    <h4 id="jobTitle">✤ Job Title: Pirate Hunter ✤</h4>
+    <button id="editJobBtn">Edit Job Title</button>
+
+    <span>✤ Akuma# 60AT ✤</span>
+    <p>✤ Studied at harvad university caloocan ✤</p>
+    <p>✤ Fanny main ✤</p>
+
+    <p id="dateDisplay"></p>
+</div>
+
+<div class="right-column">
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p class="about-text">
+        ✤ Age: 19 ✤<br>
+        ✤ Address: Sultan kudarat ✤<br>
+        ✤ School: Harvat university ✤<br>
+        ✤ Work: pizza delivery sa corn hub ✤<br>
+    </p>
+</section>
+
+<hr>
+
+<section id="contact" class="section">
+    <h2>✤ Contact ✤</h2>
+    <p>Email: <a href="#">balaguerbg@students.nu-fairview.edu.ph</a></p>
+    <p>Contact Number: <a href="#">09855481059</a></p>
+</section>
+
+<hr>
+
+<button id="toggleSkillsBtn">Hide Skills</button>
+
+<section id="skillsSection" class="section skills-box">
+    <h2>✤ Skills ✤</h2>
+    <ul>
+        <li>✤ Licensed Hunter ✤</li>
+        <li>✤ Pirate from east blue ✤</li>
+        <li>✤ Ninja sa konoha ✤</li>
+        <li>✤ Nen user ✤</li>
+    </ul>
+</section>
+
+<hr>
+
+<section id="message-form" class="section">
+<h2>✤ Message Me ✤</h2>
+
+<form class="message-form" onsubmit="return validateForm();">
+
+    <input type="text" id="nameField" placeholder="Your Name"><br>
+    <input type="text" id="emailField" placeholder="Your Email"><br>
+
+    <input type="text" id="msgBox" maxlength="200" placeholder="Your Message">
+    <p>Characters remaining: <span id="counter">200</span></p>
+
+    <input type="submit" value="Submit">
+</form>
+</section>
+
+</div>
+</section>
+
+<hr>
+
+<footer>
+<p><strong>✤ WebProg - Web Programming 2025 ✤</strong></p>
+</footer>
+
+</body>
+</html>
